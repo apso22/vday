@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #yes {
+            color: green;
+        }
+        #no {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will You Be My Valentine?</h1>
+
+    <button id="yes" onclick="response('yes')">Yes</button>
+    <button id="no" onclick="response('no')">No</button>
+
+    <script>
+        function response(answer) {
+            if (answer === 'no') {
+                document.getElementById('yes').style.fontSize = '24px';
+            }
+            alert('Thank you for your response!');
+        }
+    </script>
+
+</body>
+</html>
